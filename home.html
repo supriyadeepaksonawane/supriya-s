@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css
+
+
+
+
+    ">
+    <style>
+        .sidebar{
+            float: left;
+            width: 0px;
+            top: 0%;
+            bottom:0%;
+            background-color: rgb(25, 136, 233);
+            position: fixed;
+            overflow: hidden;
+        }
+    .closebtn{
+        float: right;
+     
+      cursor: pointer;
+
+    }
+    </style>
+</head>
+<body>
+    <div class="sidebar" id="demo">
+<i class="fa-solid fa-rectangle-xmark closebtn" onclick="closeNav('close')">
+</i>
+jshksgjhklshfrggio
+</div>
+<i  class="fa-solid fa-bars openbtn" onclick="closeNav('open')">
+
+</i>
+   
+    <script>
+    
+        function closeNav(event){
+
+            console.log('event is', event)
+            if( event=='open'){
+                document.getElementById('demo').style.width="250px";
+            }
+            else{
+                document.getElementById('demo').style.width="0px";
+            }
+             }
+    </script>
+</body>
+</html>
